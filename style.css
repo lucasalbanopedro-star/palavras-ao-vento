@@ -1,0 +1,101 @@
+/* ----------------------------
+   Tema Retrô Minimalista
+   ---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=IBM+Plex+Mono:wght@300&display=swap');
+
+:root {
+    --fundo: #f4eee2;
+    --texto: #2c2b28;
+    --borda: #c2b49a;
+    --destaque: #7a5e3a;
+    --papel: #fffdf8;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* --- Cabeçalho --- */
+header {
+    text-align: center;
+    background-color: #ede3d3;
+    border-bottom: 2px solid var(--borda);
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.6em;
+    color: var(--destaque);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95em;
+    color: #6a5a4a;
+    margin-top: 8px;
+}
+
+/* --- Corpo --- */
+main {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.poema {
+    background: var(--papel);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 45px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poema:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.poema h2 {
+    color: var(--destaque);
+    font-size: 1.7em;
+    border-bottom: 1px solid var(--borda);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.poema p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.05em;
+}
+
+pre {
+    background: #f5efe3;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95em;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    border-top: 2px solid var(--borda);
+    padding: 25px 10px;
+    background: #ede3d3;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #6a5a4a;
+    font-size: 0.9em;
+}
